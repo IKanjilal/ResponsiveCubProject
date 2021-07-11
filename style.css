@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+  font-size: 16px;
+    background-color: lightsalmon;
+}
+
+.nav {
+    padding-top: 5px;
+    background-color: teal;
+}
+
+.nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.nav li {
+    list-style-type: none;
+    padding-bottom: .75em;
+    padding-top: 1rem;
+}
+
+.nav a {
+    color: coral;
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url("https://codecademy-content.s3.amazonaws.com/PRO/independent-practice-projects/responsive-club-site/img/runner-splash.jpg");
+    height: 30rem;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    
+    margin-top: 0;
+}
+
+.heading {
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: coral;
+}
+
+.mission {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-left: 1.5rem;
+}
+
+.mission h2 {
+    color: yellow;
+}
+
+.mission p {
+    color: white;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.images img{
+    width: 30%;
+    margin: 1.5%;
+}
+
+.quote {
+    background-color: teal;
+    color: yellow;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+    padding-left: 1rem;
+}
+
+.quote h1 {
+    font-size: 2.5rem;
+}
+
+.types {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem ;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-wrap: wrap;
+}
+
+.types img {
+    width: 30%;
+    margin: 1.5%;
+}
+
+.fun {
+    text-align: center;
+    color: yellow;
+    padding: 1.5rem;
+}
+
+.fun img {
+    width: 50%;
+    height: auto;
+    margin: .5rem auto;
+}
+
+@media  only screen and (max-width: 1048px) {
+    .images img, .types img{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 640px) {
+    .nav ul {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
